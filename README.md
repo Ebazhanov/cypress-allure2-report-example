@@ -7,7 +7,7 @@ Allure report example for Cypress
 ## CircleCI [![CircleCI](https://circleci.com/gh/Ebazhanov/cypress-allure-example.svg?style=svg)](https://circleci.com/gh/Ebazhanov/cypress-allure-example )
 
 #### TODO
-- TBD from cricleci
+- make it work in cricleci
 
 #### Usage to run locally
 - `$ yarn cy:run`
