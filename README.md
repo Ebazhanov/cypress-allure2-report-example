@@ -8,7 +8,6 @@ Allure report example for Cypress
 
 #### TODO
 - TBD from cricleci
-- local [here](allure-report/index.html)
 
 #### Usage to run locally
 - `$ yarn cy:run`
