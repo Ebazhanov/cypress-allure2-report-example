@@ -27,7 +27,7 @@ jobs:
       - run:
           name: Generate `Allure report` html report
           when: always
-          command: yarn allure:report
+          command: yarn allure generate allure-results --clean -o allure-report
       - store_artifacts:
           name: Uploading cypress/videos artifacts
           path: cypress/videos
