@@ -14,6 +14,8 @@ Allure report example for Cypress
 - `$ yarn allure:report`
 - `$ allure open`
 
+![Demo](allure-screencast.gif)
+
 ### Reference:
 - [@Shelex](https://github.com/Shelex/cypress-allure-plugin-example)
 
