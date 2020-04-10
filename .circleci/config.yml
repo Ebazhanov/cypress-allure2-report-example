@@ -27,17 +27,14 @@ jobs:
           when: always
           command: yarn allure:report
       - store_artifacts:
-          name: Uploading allure-report artifacts
+          name: Uploading cypress/videos artifacts
           path: cypress/videos
       - store_artifacts:
-          name: Uploading allure-report artifacts
+          name: Uploading cypress/screenshots artifacts
           path: cypress/screenshots
       - store_artifacts:
-          name: Uploading allure-report artifacts
+          name: Uploading cypress/snapshots artifacts
           path: cypress/snapshots
       - store_artifacts:
           name: Uploading allure-report artifacts
           path: allure-report
-      - store_test_results:
-          name: Uploading allure-report artifacts
-          path: cypress/results
