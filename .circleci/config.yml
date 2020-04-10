@@ -21,18 +21,23 @@ jobs:
           key: v1-deps-{{ .Branch }}-{{ checksum "package.json" }}
           paths:
             - ~/.cache  ## cache both yarn and Cypress!
-      - run: yarn cy:run
+      - run: npx cypress run allure=true --browser chrome
       - run:
           name: Generate `Allure report` html report
           when: always
           command: yarn allure:report
       - store_artifacts:
+          name: Uploading allure-report artifacts
           path: cypress/videos
       - store_artifacts:
+          name: Uploading allure-report artifacts
           path: cypress/screenshots
       - store_artifacts:
+          name: Uploading allure-report artifacts
           path: cypress/snapshots
       - store_artifacts:
+          name: Uploading allure-report artifacts
           path: allure-report
       - store_test_results:
+          name: Uploading allure-report artifacts
           path: cypress/results
