@@ -1,0 +1,18 @@
+{
+  "name": "cypress-allure-example",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/Ebazhanov/cypress-allure-example.git",
+  "author": "Evgeny Bazhanov <evg.bazhanov@yahoo.com>",
+  "license": "MIT",
+  "scripts": {
+    "cy:open": "yarn cypress open --env allure=true --browser chrome",
+    "cy:run": "yarn cypress run --config allure=true --browser chrome",
+    "allure:report": "allure generate allure-results --clean -o allure-report",
+    "allure:clear": "rm -r allure-results/ allure-report cypress/screenshots || true"
+  },
+  "devDependencies": {
+    "@shelex/cypress-allure-plugin": "^1.1.0",
+    "cypress": "^4.1.0"
+  }
+}
