@@ -1,0 +1,284 @@
+{
+  "28bc5613ac85f7eac08842508aeb8cc4" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "4df30a3a5e13593b",
+      "reportUrl" : "https://path-to-report/#testresult/4df30a3a5e13593b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1586536331201,
+        "stop" : 1586536332369,
+        "duration" : 1168
+      }
+    } ]
+  },
+  "f3c22ddce3b6ee36dac8b9bd658acdef" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "fcb43625cdce3490",
+      "reportUrl" : "https://path-to-report/#testresult/fcb43625cdce3490",
+      "status" : "failed",
+      "statusDetails" : "Timed out retrying: expected '<input#email1.form-control.action-email>' to have value 'fakes@email.com', but the value was 'fake@email.com'",
+      "time" : {
+        "start" : 1586536314461,
+        "stop" : 1586536325057,
+        "duration" : 10596
+      }
+    } ]
+  },
+  "51a9f7733ef5e871f2775d59ad773b00" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "fabb9eb8be52010d",
+      "reportUrl" : "https://path-to-report/#testresult/fabb9eb8be52010d",
+      "status" : "passed",
+      "time" : {
+        "start" : 1586536325072,
+        "stop" : 1586536331169,
+        "duration" : 6097
+      }
+    } ]
+  },
+  "c5f3649c676a543c2cd336005d6f64fb" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "da7a53764382c234",
+      "reportUrl" : "https://path-to-report/#testresult/da7a53764382c234",
+      "status" : "passed",
+      "time" : {
+        "start" : 1586536309209,
+        "stop" : 1586536309746,
+        "duration" : 537
+      }
+    } ]
+  },
+  "4c1efb7c23927b88d87c774722380f85" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "6d51e6c4263fa848",
+      "reportUrl" : "https://path-to-report/#testresult/6d51e6c4263fa848",
+      "status" : "passed",
+      "time" : {
+        "start" : 1586536312545,
+        "stop" : 1586536313118,
+        "duration" : 573
+      }
+    } ]
+  },
+  "9669a37fa765c3bf4c36a146da118d95" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "be1ed7acffec466c",
+      "reportUrl" : "https://path-to-report/#testresult/be1ed7acffec466c",
+      "status" : "failed",
+      "statusDetails" : "Timed out retrying: expected '<input#password1.form-control.action-focus.focus>' not to have class 'focus'",
+      "time" : {
+        "start" : 1586536300052,
+        "stop" : 1586536305880,
+        "duration" : 5828
+      }
+    } ]
+  },
+  "72601dad9974c4cb0682b32e47fe55e9" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "bb417d231e58da1b",
+      "reportUrl" : "https://path-to-report/#testresult/bb417d231e58da1b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1586536332380,
+        "stop" : 1586536332696,
+        "duration" : 316
+      }
+    } ]
+  },
+  "fa534f1bfef9141e4ee0be8e32412027" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "98f7773d05f1b789",
+      "reportUrl" : "https://path-to-report/#testresult/98f7773d05f1b789",
+      "status" : "passed",
+      "time" : {
+        "start" : 1586536306804,
+        "stop" : 1586536309195,
+        "duration" : 2391
+      }
+    } ]
+  },
+  "849ba0e0891ca04ca3b974daf1abad42" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "f6894afc3f2689a",
+      "reportUrl" : "https://path-to-report/#testresult/f6894afc3f2689a",
+      "status" : "passed",
+      "time" : {
+        "start" : 1586536313455,
+        "stop" : 1586536314455,
+        "duration" : 1000
+      }
+    } ]
+  },
+  "d344e728139f2b8b8dd61351b7c9ff28" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "de750b2ba8f2fedd",
+      "reportUrl" : "https://path-to-report/#testresult/de750b2ba8f2fedd",
+      "status" : "passed",
+      "time" : {
+        "start" : 1586536309754,
+        "stop" : 1586536312538,
+        "duration" : 2784
+      }
+    } ]
+  },
+  "fe80c3e0acdef7da3652450f932b177f" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "197b7d5182288591",
+      "reportUrl" : "https://path-to-report/#testresult/197b7d5182288591",
+      "status" : "passed",
+      "time" : {
+        "start" : 1586536333037,
+        "stop" : 1586536335368,
+        "duration" : 2331
+      }
+    } ]
+  },
+  "2403b69d3efe79b711ea79f102961b49" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "c7deaeef58b85881",
+      "reportUrl" : "https://path-to-report/#testresult/c7deaeef58b85881",
+      "status" : "passed",
+      "time" : {
+        "start" : 1586536305900,
+        "stop" : 1586536306790,
+        "duration" : 890
+      }
+    } ]
+  },
+  "e8e9d54ad7f8d5dc5395c519ee0c3bec" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "c446955dc690b869",
+      "reportUrl" : "https://path-to-report/#testresult/c446955dc690b869",
+      "status" : "passed",
+      "time" : {
+        "start" : 1586536313125,
+        "stop" : 1586536313447,
+        "duration" : 322
+      }
+    } ]
+  },
+  "21f1cc93d9cdddda675113664770c6c7" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "a2f48a26f27fd908",
+      "reportUrl" : "https://path-to-report/#testresult/a2f48a26f27fd908",
+      "status" : "passed",
+      "time" : {
+        "start" : 1586536332723,
+        "stop" : 1586536333022,
+        "duration" : 299
+      }
+    } ]
+  }
+}

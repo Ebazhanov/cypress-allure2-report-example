@@ -1,0 +1,202 @@
+{
+  "uid" : "fcb43625cdce3490",
+  "name" : ".type() - type into a DOM element",
+  "fullName" : ".type() - type into a DOM element",
+  "historyId" : "f3c22ddce3b6ee36dac8b9bd658acdef",
+  "time" : {
+    "start" : 1586536314461,
+    "stop" : 1586536325057,
+    "duration" : 10596
+  },
+  "status" : "failed",
+  "statusMessage" : "Timed out retrying: expected '<input#email1.form-control.action-email>' to have value 'fakes@email.com', but the value was 'fake@email.com'",
+  "statusTrace" : "AssertionError: Timed out retrying: expected '<input#email1.form-control.action-email>' to have value 'fakes@email.com', but the value was 'fake@email.com'\n    at applyChainer (https://example.cypress.io/__cypress/runner/cypress_runner.js:131707:32)\n    at https://example.cypress.io/__cypress/runner/cypress_runner.js:131748:16\n    at arrayReduce (https://example.cypress.io/__cypress/runner/cypress_runner.js:18403:21)\n    at Function.reduce (https://example.cypress.io/__cypress/runner/cypress_runner.js:27401:14)\n    at applyChainers (https://example.cypress.io/__cypress/runner/cypress_runner.js:131738:18)\n    at tryCatcher (https://example.cypress.io/__cypress/runner/cypress_runner.js:9059:23)\n    at Function.Promise.attempt.Promise.try (https://example.cypress.io/__cypress/runner/cypress_runner.js:6333:29)\n    at Context.shouldFn (https://example.cypress.io/__cypress/runner/cypress_runner.js:131752:23)\n    at Context.should (https://example.cypress.io/__cypress/runner/cypress_runner.js:131767:23)\n    at https://example.cypress.io/__cypress/runner/cypress_runner.js:127819:39\n    at assertions (https://example.cypress.io/__cypress/runner/cypress_runner.js:128079:14)\n    at tryCatcher (https://example.cypress.io/__cypress/runner/cypress_runner.js:9059:23)\n    at Object.gotValue (https://example.cypress.io/__cypress/runner/cypress_runner.js:8203:18)\n    at Object.gotAccum (https://example.cypress.io/__cypress/runner/cypress_runner.js:8190:25)\n    at Object.tryCatcher (https://example.cypress.io/__cypress/runner/cypress_runner.js:9059:23)\n    at Promise._settlePromiseFromHandler (https://example.cypress.io/__cypress/runner/cypress_runner.js:6994:31)",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "time" : { },
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "visit https://example.cypress.io/commands/actions ",
+      "time" : {
+        "start" : 1586536314481,
+        "stop" : 1586536314720,
+        "duration" : 239
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 1,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  } ],
+  "testStage" : {
+    "status" : "failed",
+    "statusMessage" : "Timed out retrying: expected '<input#email1.form-control.action-email>' to have value 'fakes@email.com', but the value was 'fake@email.com'",
+    "statusTrace" : "AssertionError: Timed out retrying: expected '<input#email1.form-control.action-email>' to have value 'fakes@email.com', but the value was 'fake@email.com'\n    at applyChainer (https://example.cypress.io/__cypress/runner/cypress_runner.js:131707:32)\n    at https://example.cypress.io/__cypress/runner/cypress_runner.js:131748:16\n    at arrayReduce (https://example.cypress.io/__cypress/runner/cypress_runner.js:18403:21)\n    at Function.reduce (https://example.cypress.io/__cypress/runner/cypress_runner.js:27401:14)\n    at applyChainers (https://example.cypress.io/__cypress/runner/cypress_runner.js:131738:18)\n    at tryCatcher (https://example.cypress.io/__cypress/runner/cypress_runner.js:9059:23)\n    at Function.Promise.attempt.Promise.try (https://example.cypress.io/__cypress/runner/cypress_runner.js:6333:29)\n    at Context.shouldFn (https://example.cypress.io/__cypress/runner/cypress_runner.js:131752:23)\n    at Context.should (https://example.cypress.io/__cypress/runner/cypress_runner.js:131767:23)\n    at https://example.cypress.io/__cypress/runner/cypress_runner.js:127819:39\n    at assertions (https://example.cypress.io/__cypress/runner/cypress_runner.js:128079:14)\n    at tryCatcher (https://example.cypress.io/__cypress/runner/cypress_runner.js:9059:23)\n    at Object.gotValue (https://example.cypress.io/__cypress/runner/cypress_runner.js:8203:18)\n    at Object.gotAccum (https://example.cypress.io/__cypress/runner/cypress_runner.js:8190:25)\n    at Object.tryCatcher (https://example.cypress.io/__cypress/runner/cypress_runner.js:9059:23)\n    at Promise._settlePromiseFromHandler (https://example.cypress.io/__cypress/runner/cypress_runner.js:6994:31)",
+    "steps" : [ {
+      "name" : "take usual screenshot from test",
+      "time" : {
+        "start" : 1586536314720,
+        "stop" : 1586536325057,
+        "duration" : 10337
+      },
+      "status" : "failed",
+      "steps" : [ {
+        "name" : "screenshot  ",
+        "time" : {
+          "start" : 1586536314721,
+          "stop" : 1586536320462,
+          "duration" : 5741
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "get .action-email ",
+        "time" : {
+          "start" : 1586536320462,
+          "stop" : 1586536320475,
+          "duration" : 13
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "type fake@email.com ",
+        "time" : {
+          "start" : 1586536320475,
+          "stop" : 1586536320803,
+          "duration" : 328
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "assert expected **<input#email1.form-control.action-email>** to have value **fakes@email.com**, but the value was **fake@email.com** ",
+        "time" : {
+          "start" : 1586536320803,
+          "stop" : 1586536325057,
+          "duration" : 4254
+        },
+        "status" : "failed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 4,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ {
+      "uid" : "3ed1f7f28bf830f0",
+      "name" : "actions.spec.js:2020-04-10T16:31:58.222Z",
+      "source" : "3ed1f7f28bf830f0.png",
+      "type" : "image/png",
+      "size" : 1035906
+    }, {
+      "uid" : "daf61630d244b362",
+      "name" : "actions.spec.js:2020-04-10T16:32:04.474Z",
+      "source" : "daf61630d244b362.png",
+      "type" : "image/png",
+      "size" : 505252
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 5,
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : true,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "time" : { },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "Actions"
+  }, {
+    "name" : "feature",
+    "value" : "Actions Feature"
+  }, {
+    "name" : "epic",
+    "value" : "Actions Epic"
+  }, {
+    "name" : "lead",
+    "value" : "Lead"
+  }, {
+    "name" : "owner",
+    "value" : "Me, lol"
+  }, {
+    "name" : "framework",
+    "value" : "Cypress E2E Examples"
+  }, {
+    "name" : "tag",
+    "value" : "FAILED BY INTENT"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ {
+    "name" : "docs",
+    "url" : "https://on.cypress.io/interacting-with-elements",
+    "type" : "tms"
+  }, {
+    "name" : "docs",
+    "url" : "https://some.testrail.instance/path/suite/caseID-https://on.cypress.io/type",
+    "type" : "tms"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "owner" : "Me, lol",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ "FAILED BY INTENT" ]
+  },
+  "source" : "fcb43625cdce3490.json",
+  "parameterValues" : [ ]
+}

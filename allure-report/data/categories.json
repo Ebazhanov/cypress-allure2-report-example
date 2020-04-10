@@ -1,0 +1,43 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "name" : "categories",
+  "children" : [ {
+    "name" : "Product defects",
+    "children" : [ {
+      "name" : "Timed out retrying: expected '<input#password1.form-control.action-focus.focus>' not to have class 'focus'",
+      "children" : [ {
+        "name" : ".focus() - focus on a DOM element",
+        "uid" : "be1ed7acffec466c",
+        "parentUid" : "1c5d6b9ed0519da8639c4f81f2b7a5a3",
+        "status" : "failed",
+        "time" : {
+          "start" : 1586536300052,
+          "stop" : 1586536305880,
+          "duration" : 5828
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "1c5d6b9ed0519da8639c4f81f2b7a5a3"
+    }, {
+      "name" : "Timed out retrying: expected '<input#email1.form-control.action-email>' to have value 'fakes@email.com', but the value was 'fake@email.com'",
+      "children" : [ {
+        "name" : ".type() - type into a DOM element",
+        "uid" : "fcb43625cdce3490",
+        "parentUid" : "f4abfca97993c5ae1bb3a10931fe8769",
+        "status" : "failed",
+        "time" : {
+          "start" : 1586536314461,
+          "stop" : 1586536325057,
+          "duration" : 10596
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "f4abfca97993c5ae1bb3a10931fe8769"
+    } ],
+    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
+  } ]
+}

@@ -6,8 +6,14 @@ Allure report example for Cypress
 
 ## CircleCI [![CircleCI](https://circleci.com/gh/Ebazhanov/cypress-allure-example.svg?style=svg)](https://circleci.com/gh/Ebazhanov/cypress-allure-example )
 
-#### Example of Allure from CirlceCI:
-- TBD
+#### TODO
+- TBD from cricleci
+- local [here](allure-report/index.html)
+
+#### Usage to run locally
+- `$ yarn cy:run`
+- `$ yarn allure:report`
+- `$ allure open`
 
 ### Reference:
 - [@Shelex](https://github.com/Shelex/cypress-allure-plugin-example)

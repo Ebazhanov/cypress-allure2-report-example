@@ -1,0 +1,21 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Fri Apr 10 18:32:12 CEST 2020","Fri Apr 10 18:32:12 CEST 2020","316","Actions","","","","",".scrollIntoView() - scroll an element into view",""
+"passed","Fri Apr 10 18:31:49 CEST 2020","Fri Apr 10 18:31:49 CEST 2020","537","Actions","","","","",".submit() - submit a form",""
+"passed","Fri Apr 10 18:32:05 CEST 2020","Fri Apr 10 18:32:11 CEST 2020","6097","Actions","","","","",".uncheck() - uncheck a checkbox element",""
+"passed","Fri Apr 10 18:31:46 CEST 2020","Fri Apr 10 18:31:49 CEST 2020","2391","Actions","","","","",".clear() - clears an input or textarea element",""
+"passed","Fri Apr 10 18:31:53 CEST 2020","Fri Apr 10 18:31:54 CEST 2020","1000","Actions","","","","",".check() - check a checkbox or radio element","
+      By default, .check() will check all
+      matching checkbox or radio elements in succession, one after another"
+"passed","Fri Apr 10 18:31:45 CEST 2020","Fri Apr 10 18:31:46 CEST 2020","890","Actions","","","","",".blur() - blur off a DOM element",""
+"failed","Fri Apr 10 18:31:54 CEST 2020","Fri Apr 10 18:32:05 CEST 2020","10596","Actions","","","","",".type() - type into a DOM element",""
+"passed","Fri Apr 10 18:32:13 CEST 2020","Fri Apr 10 18:32:15 CEST 2020","2331","Actions","","","","","cy.scrollTo() - scroll the window or element to a position",""
+"passed","Fri Apr 10 18:31:52 CEST 2020","Fri Apr 10 18:31:53 CEST 2020","573","Actions","","","","",".dblclick() - double click on a DOM element","
+      Our app has a listener on 'dblclick' event in our 'scripts.js'
+      that hides the div and shows an input on double click"
+"passed","Fri Apr 10 18:32:12 CEST 2020","Fri Apr 10 18:32:13 CEST 2020","299","Actions","","","","",".trigger() - trigger an event on a DOM element",""
+"passed","Fri Apr 10 18:31:49 CEST 2020","Fri Apr 10 18:31:52 CEST 2020","2784","Actions","","","","",".click() - click on a DOM element",""
+"passed","Fri Apr 10 18:32:11 CEST 2020","Fri Apr 10 18:32:12 CEST 2020","1168","Actions","","","","",".select() - select an option in a <select> element",""
+"passed","Fri Apr 10 18:31:53 CEST 2020","Fri Apr 10 18:31:53 CEST 2020","322","Actions","","subSuiteValue","","",".rightclick() - right click on a DOM element","
+      Our app has a listener on 'contextmenu' event in our 'scripts.js'
+      that hides the div and shows an input on right click"
+"failed","Fri Apr 10 18:31:40 CEST 2020","Fri Apr 10 18:31:45 CEST 2020","5828","Actions","","","","",".focus() - focus on a DOM element",""
