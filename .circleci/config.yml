@@ -1,16 +1,15 @@
 version: 2.1
 orbs:
   allure: ayte/allure@0.1.3
-jobs:
-  build:
-    docker:
-      - image: cypress/base:10
-        environment:
-          ## this enables colors in the output
-          TERM: xterm
-    working_directory: ~/app
+commands:
+  install:
+    description: Installs Allure Framework and registers it as /usr/local/bin/allure
+    parameters:
+      version:
+        description: Allure version to use
+        type: string
+        default: 2.13.1
     steps:
-      - checkout
       - run:
           name: Allure archive download
           command: curl -L https://github.com/allure-framework/allure2/releases/download/<< parameters.version >>/allure-commandline-<< parameters.version >>.zip -o /tmp/allure.zip
@@ -23,6 +22,16 @@ jobs:
       - run:
           name: Allure binary symlinking
           command: sudo ln -s /usr/local/share/allure/bin/allure /usr/local/bin/allure
+jobs:
+  build:
+    docker:
+      - image: cypress/base:10
+        environment:
+          ## this enables colors in the output
+          TERM: xterm
+    working_directory: ~/app
+    steps:
+      - checkout
       - restore_cache:
           keys:
             - v1-deps-{{ .Branch }}-{{ checksum "package.json" }}
