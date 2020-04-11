@@ -1,4 +1,4 @@
-Allure report example for Cypress
+Allure2 report example for Cypress
 -----------------------------------
 > This repo an example of how to use `cypress-allure-example` plugin
 
