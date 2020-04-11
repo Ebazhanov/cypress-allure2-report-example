@@ -20,23 +20,13 @@ jobs:
       - run:
           name: Install Dependencies
           command: yarn install
-      - run:
-          name: Allure archive download
-          command: curl -L https://github.com/allure-framework/allure2/archive/2.13.2.zip -o /tmp/allure.zip
-      - run:
-          name: Archive extraction
-          command: unzip /tmp/allure.zip
-      - run:
-          name: Allure installation
-          command: sudo mv allure-<< parameters.version >> /usr/local/share/allure
-      - run:
-          name: Allure binary symlinking
-          command: sudo ln -s /usr/local/share/allure/bin/allure /usr/local/bin/allure
       - save_cache:
           key: v1-deps-{{ .Branch }}-{{ checksum "package.json" }}
           paths:
             - ~/.cache  ## cache both yarn and Cypress!
-      - run: yarn cy:run
+      - run:
+          name: Run cypress tests
+          command: yarn cy:run
       - run:
           name: Generate `Allure report` html report
           when: always
