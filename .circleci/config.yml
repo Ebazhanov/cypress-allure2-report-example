@@ -52,7 +52,7 @@ jobs:
       - run:
           name: Generate `Allure report` html report
           when: always
-          command: allure:report
+          command: allure generate allure-results --clean -o allure-report
       - store_artifacts:
           name: Uploading cypress/videos artifacts
           path: cypress/videos
