@@ -9,6 +9,9 @@ Allure report example for Cypress
 #### Example of Allure report 
 - from [cricleci](https://27-254609643-gh.circle-artifacts.com/0/allure-report/index.html#)
 
+### TODO
+- [ ] Make work on CircleCI
+
 #### Usage to run locally
 - `$ yarn cy:run`
 - `$ yarn allure:report`
