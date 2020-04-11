@@ -13,7 +13,7 @@ commands:
     steps:
       - run:
           name: Allure archive download
-          command: curl -L https://github.com/allure-framework/allure2/archive/2.13.2.zip -o /tmp/allure.zip
+          command: curl -L https://github.com/allure-framework/allure2/releases/download/2.13.2.zip -o /tmp/allure.zip
       - run:
           name: Archive extraction
           command: unzip /tmp/allure.zip
