@@ -19,6 +19,9 @@ jobs:
       - run:
           name: Install Dependencies
           command: yarn install
+      - run:
+          name: Install Allure
+          command: brew install allure
       - save_cache:
           key: v1-deps-{{ .Branch }}-{{ checksum "package.json" }}
           paths:
