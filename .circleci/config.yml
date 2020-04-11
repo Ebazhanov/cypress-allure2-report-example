@@ -1,6 +1,28 @@
 version: 2.1
 orbs:
   allure: ayte/allure@0.1.3
+description: Orb providing support for [Allure Framework](https://github.com/allure-framework/allure2)
+commands:
+  install:
+    description: Installs Allure Framework and registers it as /usr/local/bin/allure
+    parameters:
+      version:
+        description: Allure version to use
+        type: string
+        default: 2.13.2
+    steps:
+      - run:
+          name: Allure archive download
+          command: curl -L https://github.com/allure-framework/allure2/archive/2.13.2.zip -o /tmp/allure.zip
+      - run:
+          name: Archive extraction
+          command: unzip /tmp/allure.zip
+      - run:
+          name: Allure installation
+          command: sudo mv allure-<< parameters.version >> /usr/local/share/allure
+      - run:
+          name: Allure binary symlinking
+          command: sudo ln -s /usr/local/share/allure/bin/allure /usr/local/bin/allure
 
 jobs:
   build:
