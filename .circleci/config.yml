@@ -49,10 +49,10 @@ jobs:
       - run:
           name: Run cypress tests
           command: yarn cy:run
-      - run:
-          name: Generate `Allure report` html report
-          when: always
-          command: yarn allure:report
+      #- run:
+      #    name: Generate `Allure report` html report
+      #    when: always
+      #    command: yarn allure:report
       - store_artifacts:
           name: Uploading cypress/videos artifacts
           path: cypress/videos

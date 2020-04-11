@@ -3,4 +3,5 @@ cypress/videos/
 cypress/results/
 node_modules/
 allure-results
+allure-report
 .idea
