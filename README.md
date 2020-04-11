@@ -17,6 +17,7 @@ Allure report example for Cypress
 ![Demo](allure-screencast.gif)
 
 ### Reference:
+- Allure official docs [https://docs.qameta.io/allure/#_get_started](https://docs.qameta.io/allure/#_get_started)
 - [@Shelex](https://github.com/Shelex/cypress-allure-plugin-example)
 
 
