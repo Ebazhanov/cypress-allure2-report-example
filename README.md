@@ -4,7 +4,7 @@ Allure report example for Cypress
 
 [![NPM][npm-icon]][npm-url]
 
-## CircleCI [![CircleCI](https://circleci.com/gh/Ebazhanov/cypress-allure-example.svg?style=svg)](https://circleci.com/gh/Ebazhanov/cypress-allure-example )
+## CircleCI [![CircleCI](https://circleci.com/gh/Ebazhanov/cypress-allure-report-example.svg?style=svg)](https://circleci.com/gh/Ebazhanov/cypress-allure-report-example )
 
 #### Example of Allure report 
 - from [cricleci](https://27-254609643-gh.circle-artifacts.com/0/allure-report/index.html#)

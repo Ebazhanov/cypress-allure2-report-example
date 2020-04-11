@@ -19,7 +19,7 @@ commands:
           command: unzip /tmp/allure.zip
       - run:
           name: Allure installation
-          command: sudo mv allure-<< parameters.version >> /usr/local/share/allure
+          command: sudo mv allure-2.13.2/usr/local/share/allure
       - run:
           name: Allure binary symlinking
           command: sudo ln -s /usr/local/share/allure/bin/allure /usr/local/bin/allure
