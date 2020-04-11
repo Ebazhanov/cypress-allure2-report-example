@@ -27,7 +27,7 @@ commands:
 jobs:
   build:
     docker:
-      - image: cypress/base:10
+      - image: circleci/node:13.8.0-browsers
         environment:
           ## this enables colors in the output
           TERM: xterm
