@@ -33,7 +33,13 @@ jobs:
           name: Run cypress tests
           command: yarn cy:run
 
-      - allure/generate
+      - run:
+          name: Generate report
+          when: on_fail
+          command: allure generate
+
+      # Version - 05
+      # - allure/generate
 
       # Version - 04
       #- run:
