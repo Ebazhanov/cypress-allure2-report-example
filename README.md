@@ -7,10 +7,7 @@ Allure2 report example for Cypress
 ## CircleCI [![CircleCI](https://circleci.com/gh/Ebazhanov/cypress-allure-report-example.svg?style=svg)](https://circleci.com/gh/Ebazhanov/cypress-allure-report-example )
 
 #### Example of Allure report 
-- from [cricleci](https://27-254609643-gh.circle-artifacts.com/0/allure-report/index.html#)
-
-### TODO
-- [ ] Make it work on CircleCI
+- from [cricleci](https://63-254609643-gh.circle-artifacts.com/0/allure-report/index.html)
 
 #### Usage to run locally
 - `$ yarn cy:run`
@@ -19,7 +16,7 @@ Allure2 report example for Cypress
 
 ![Demo](allure-screencast.gif)
 
-### Reference:
+### References:
 - Allure2 official docs 
   - [qameta.io](https://docs.qameta.io/allure/#_get_started)
   - [releases](https://github.com/allure-framework/allure2/releases)
