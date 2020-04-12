@@ -6,7 +6,7 @@ jobs:
   build:
     docker:
       # - image: circleci/node:13.8.0-browsers
-      - image: circleci/node@1.1.6
+      - image: circleci/node:latest-browsers
         environment:
           ## this enables colors in the output
           TERM: xterm
@@ -14,26 +14,26 @@ jobs:
     # working_directory: ~/app
     steps:
       - checkout
+      # allure/install
+      - allure/install
       - restore_cache:
           keys:
-            - v2-deps-{{ .Branch }}-{{ checksum "package.json" }}
-            - v2-deps-{{ .Branch }}
-            - v2-deps
+            - v3-deps-{{ .Branch }}-{{ checksum "package.json" }}
+            - v3-deps-{{ .Branch }}
+            - v3-deps
       - run:
           name: Install Dependencies
           command: yarn install
       - save_cache:
-          key: v2-deps-{{ .Branch }}-{{ checksum "package.json" }}
+          key: v3-deps-{{ .Branch }}-{{ checksum "package.json" }}
           paths:
             - ~/.cache  ## cache both yarn and Cypress!
-
-      - run: allure/install
 
       - run:
           name: Run cypress tests
           command: yarn cy:run
 
-      - run: allure/generate
+      - allure/generate
 
       # Version - 04
       #- run:
