@@ -5,7 +5,6 @@ orbs:
 jobs:
   build:
     docker:
-      # - image: circleci/node:13.8.0-browsers
       - image: circleci/node:latest-browsers
         environment:
           ## this enables colors in the output
