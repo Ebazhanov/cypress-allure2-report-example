@@ -28,7 +28,10 @@ jobs:
           name: Run cypress tests
           command: yarn cy:run
 
-      - run: allure/install
+      - run:
+          name: install allure
+          when: always
+          command: allure/install
 
       # Version - 02
       #- install-allure:
