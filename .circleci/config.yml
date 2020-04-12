@@ -28,15 +28,20 @@ jobs:
           name: Run cypress tests
           command: yarn cy:run
 
-      - install-allure:
-          name: install allure
-          when: always
-          command: allure/install
-      - generate-allure:
-          name: Generate `Allure report` html report
-          when: always
-          command: allure/report
+      - run: allure/install
 
+      # Version - 02
+      #- install-allure:
+      #    name: install allure
+      #    when: always
+      #    command: allure/install
+      #- generate-allure:
+      #    name: Generate `Allure report` html report
+      #    when: always
+      #    command: allure/report
+
+
+      # Version - 01
       #- allure/install:
       #    name: Allure veresion
       #    when: always
@@ -45,7 +50,7 @@ jobs:
       #    name: Generate `Allure report` html report
       #    when: always
       #    command: allure generate allure-results --clean -o allure-report
-        
+
       - store_artifacts:
           name: Uploading cypress/videos artifacts
           path: cypress/videos
