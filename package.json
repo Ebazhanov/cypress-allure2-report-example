@@ -1,8 +1,4 @@
 {
-    "name": "cypress-allure-plugin-example",
-    "version": "1.0.0",
-    "main": "index.js",
-    "license": "MIT",
     "scripts": {
         "cy:open": "cypress open --env allure=true --browser chrome",
         "cy:run": "cypress run --env allure=true --browser chrome",
