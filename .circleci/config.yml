@@ -45,6 +45,9 @@ jobs:
       - run:
           name: Install allure-commandline
           command: yarn add allure-commandline
+      - run:
+          name: Install Allure
+          command: allure/install
       - save_cache:
           key: v2-deps-{{ .Branch }}-{{ checksum "package.json" }}
           paths:
