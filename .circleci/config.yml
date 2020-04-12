@@ -9,7 +9,8 @@ jobs:
         environment:
           ## this enables colors in the output
           TERM: xterm
-    working_directory: ~/app
+    working_directory: /tmp/workspace
+    # working_directory: ~/app
     steps:
       - checkout
       - restore_cache:
@@ -28,10 +29,21 @@ jobs:
           name: Run cypress tests
           command: yarn cy:run
 
+
       - run:
-          name: install allure
+          name: Generate `Allure report` html report
           when: always
-          command: allure/install
+          command: node_modules/allure-commandline/dist/bin/allure generate -c -o build/report/allure -- build/metadata/allure
+
+      # Version - 03
+      #- run:
+      #    name: install allure
+      #    when: always
+      #    command: allure/install
+      #- run:
+      #    name: Generate `Allure report` html report
+      #    when: always
+      #    command: allure/report
 
       # Version - 02
       #- install-allure:
