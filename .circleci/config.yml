@@ -11,12 +11,12 @@ jobs:
           ## this enables colors in the output
           TERM: xterm
     working_directory: /tmp/workspace
-    # working_directory: ~/app
     steps:
       - checkout
-      # allure/install
+      # Make `allure` command available by installing dependencies from `ayte` orb
       - allure/install
       - restore_cache:
+          name: Restore `package.json` cache
           keys:
             - v3-deps-{{ .Branch }}-{{ checksum "package.json" }}
             - v3-deps-{{ .Branch }}
@@ -25,62 +25,21 @@ jobs:
           name: Install Dependencies
           command: yarn install
       - save_cache:
+          name: Save cache both yarn and Cypress!
           key: v3-deps-{{ .Branch }}-{{ checksum "package.json" }}
           paths:
             - ~/.cache  ## cache both yarn and Cypress!
-
       - run:
           name: Run cypress tests
           command: yarn cy:run
-
       - run:
-          name: Generate report
-          when: on_fail
+          name: Generate `Allure report` html report
+          when: always
+          # Run command from orb more info https://github.com/ayte-io/circle-ci-orb-allure
           command: allure generate
-
-      # Version - 05
-      # - allure/generate
-
-      # Version - 04
-      #- run:
-      #    name: Generate `Allure report` html report
-      #    when: always
-      #    command: node_modules/allure-commandline/dist/bin/allure generate -c -o build/report/allure -- build/metadata/allure
-
-      # Version - 03
-      #- run:
-      #    name: install allure
-      #    when: always
-      #    command: allure/install
-      #- run:
-      #    name: Generate `Allure report` html report
-      #    when: always
-      #    command: allure/report
-
-      # Version - 02
-      #- install-allure:
-      #    name: install allure
-      #    when: always
-      #    command: allure/install
-      #- generate-allure:
-      #    name: Generate `Allure report` html report
-      #    when: always
-      #    command: allure/report
-
-
-      # Version - 01
-      #- allure/install:
-      #    name: Allure veresion
-      #    when: always
-      #    command: allure --version
-      #- allure/report:
-      #    name: Generate `Allure report` html report
-      #    when: always
-      #    command: allure generate allure-results --clean -o allure-report
-
-      # - store_artifacts:
-      #     name: Uploading cypress/videos artifacts
-      #     path: cypress/videos
+      - store_artifacts:
+          name: Uploading cypress/videos artifacts
+          path: cypress/videos
       - store_artifacts:
           name: Uploading cypress/screenshots artifacts
           path: cypress/screenshots
