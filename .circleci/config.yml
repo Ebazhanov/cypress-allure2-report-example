@@ -25,15 +25,20 @@ jobs:
           key: v2-deps-{{ .Branch }}-{{ checksum "package.json" }}
           paths:
             - ~/.cache  ## cache both yarn and Cypress!
+
+      - run: google-chrome --version
+          - checkout
+          - allure/install
+        
       - run:
           name: Run cypress tests
           command: yarn cy:run
 
-
-      - run:
-          name: Generate `Allure report` html report
-          when: always
-          command: node_modules/allure-commandline/dist/bin/allure generate -c -o build/report/allure -- build/metadata/allure
+      # Version - 04
+      #- run:
+      #    name: Generate `Allure report` html report
+      #    when: always
+      #    command: node_modules/allure-commandline/dist/bin/allure generate -c -o build/report/allure -- build/metadata/allure
 
       # Version - 03
       #- run:
