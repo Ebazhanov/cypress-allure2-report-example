@@ -6,7 +6,7 @@
         "allure:clear": "rm -r allure-results/ allure-report cypress/screenshots || true"
     },
     "devDependencies": {
-        "@shelex/cypress-allure-plugin": "1.2.0",
+        "@shelex/cypress-allure-plugin": "1.3.0",
         "allure-commandline": "^2.13.0",
         "cypress": "4.3.0"
     }

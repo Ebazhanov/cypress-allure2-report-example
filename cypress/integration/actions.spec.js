@@ -128,10 +128,10 @@ context('Actions', () => {
             .click(170, 165);
 
         // click multiple elements by passing multiple: true
-        cy.get('.action-labels>.label').click({ multiple: true });
+        cy.get('.action-labels>.label').click({multiple: true});
 
         // Ignore error checking prior to clicking
-        cy.get('.action-opacity>.btn').click({ force: true });
+        cy.get('.action-opacity>.btn').click({force: true});
     });
 
     it('.dblclick() - double click on a DOM element', () => {
@@ -190,11 +190,11 @@ context('Actions', () => {
 
         cy.allure().step('Ignore error checking prior to checking');
         cy.get('.action-checkboxes [disabled]')
-            .check({ force: true })
+            .check({force: true})
             .should('be.checked');
 
         cy.get('.action-radios [type="radio"]')
-            .check('radio3', { force: true })
+            .check('radio3', {force: true})
             .should('be.checked');
     });
 
@@ -223,14 +223,14 @@ context('Actions', () => {
 
         cy.allure()
             .step('Delay each keypress by 0.1 sec')
-            .type('slow.typing@email.com', { delay: 100 })
+            .type('slow.typing@email.com', {delay: 100})
             .should('have.value', 'slow.typing@email.com');
 
         cy.allure().step(
             'Ignore error checking prior to type, like whether the input is visible or disabled'
         );
         cy.get('.action-disabled')
-            .type('disabled error checking', { force: true })
+            .type('disabled error checking', {force: true})
             .should('have.value', 'disabled error checking');
     });
 
@@ -259,7 +259,7 @@ context('Actions', () => {
 
         cy.allure().step('Ignore error checking prior to unchecking');
         cy.get('.action-check [disabled]')
-            .uncheck({ force: true })
+            .uncheck({force: true})
             .should('not.be.checked');
     });
 
@@ -388,9 +388,18 @@ context('Actions', () => {
         cy.get('#scrollable-both').scrollTo('75%', '25%');
 
         // control the easing of the scroll (default is 'swing')
-        cy.get('#scrollable-vertical').scrollTo('center', { easing: 'linear' });
+        cy.get('#scrollable-vertical').scrollTo('center', {easing: 'linear'});
 
         // control the duration of the scroll (in ms)
-        cy.get('#scrollable-both').scrollTo('center', { duration: 2000 });
+        cy.get('#scrollable-both').scrollTo('center', {duration: 2000});
     });
+
+    it.skip('should skip test 1', () => {
+        //TODO
+    });
+
+    it.skip('should skip test 2', () => {
+        //TODO
+    });
+
 });
