@@ -4,7 +4,7 @@ Allure2 report example for Cypress
 
 [![NPM][npm-icon]][npm-url]
 
-## CircleCI [![CircleCI](https://circleci.com/gh/Ebazhanov/cypress-allure-report-example.svg?style=svg)](https://circleci.com/gh/Ebazhanov/cypress-allure-report-example )
+## CircleCI [![CircleCI](https://circleci.com/gh/Ebazhanov/cypress-allure2-report-example.svg?style=svg)](https://circleci.com/gh/Ebazhanov/cypress-allure2-report-example)
 
 #### Example of Allure report 
 - from [cricleci](https://63-254609643-gh.circle-artifacts.com/0/allure-report/index.html)
@@ -19,8 +19,8 @@ Allure2 report example for Cypress
 ### References:
 - Allure2 official docs 
   - [qameta.io](https://docs.qameta.io/allure/#_get_started)
-  - [releases](https://github.com/allure-framework/allure2/releases)
 - Creator of plugin [@Shelex](https://github.com/Shelex/cypress-allure-plugin)
+  - [releases](https://github.com/Shelex/cypress-allure-plugin/releases)
 
 [npm-icon]: https://nodei.co/npm/cypress-allure-plugin.svg?downloads=true
 [npm-url]: https://www.npmjs.com/package/@shelex/cypress-allure-plugin
