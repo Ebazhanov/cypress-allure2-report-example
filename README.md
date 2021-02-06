@@ -1,20 +1,17 @@
-Allure2 report example for Cypress
+Allure-2 report example for Cypress
 -----------------------------------
-> This repo an example of how to use `cypress-allure-example` plugin
+> This repo an example of how to use [cypress-allure-example](https://www.npmjs.com/package/@shelex/cypress-allure-plugin) plugin
 
 [![NPM][npm-icon]][npm-url]
 
 ## CircleCI [![CircleCI](https://circleci.com/gh/Ebazhanov/cypress-allure2-report-example.svg?style=svg)](https://circleci.com/gh/Ebazhanov/cypress-allure2-report-example)
-
-#### Example of Allure report 
-- from [cricleci](https://63-254609643-gh.circle-artifacts.com/0/allure-report/index.html)
 
 #### Usage to run locally
 - `$ yarn cy:run`
 - `$ yarn allure:report`
 - `$ allure open`
 
-<img src="https://monosnap.com/image/2o0CkVlOV88V52wxpIjIxh93IW9XRW"/>
+![Alt text](https://monosnap.com/image/1Lz0Oyrc5f01YdL33bMvJC8pGrkCKz)
 
 ### References:
 - Allure2 official docs 
