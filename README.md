@@ -14,7 +14,7 @@ Allure2 report example for Cypress
 - `$ yarn allure:report`
 - `$ allure open`
 
-![Demo](allure-screencast.gif)
+<img src="https://monosnap.com/image/2o0CkVlOV88V52wxpIjIxh93IW9XRW"/>
 
 ### References:
 - Allure2 official docs 
